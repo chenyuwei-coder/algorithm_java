@@ -32,7 +32,7 @@ public class MyMostDistance {
         if (d ==0)
             return 0;
         //2.初始化桶
-        int bucketNum = array.length;
+        int bucketNum = array.length+1;
         Bucket[] buckets = new Bucket[bucketNum];
         for (int i=0;i<bucketNum;i++){
             buckets[i] = new Bucket();

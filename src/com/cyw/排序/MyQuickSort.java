@@ -20,7 +20,7 @@ public class MyQuickSort {
         //递归结束的条件
         if (startIndex >= endIndex)
             return;
-        int pivotIndex = partition1(array, startIndex, endIndex);
+        int pivotIndex = partition(array, startIndex, endIndex);
         quickSort(array, startIndex, pivotIndex - 1);
         quickSort(array, pivotIndex + 1, endIndex);
     }

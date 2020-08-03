@@ -11,7 +11,7 @@ public class MyHeapSort {
         int temp = array[parentIndex];
         int childIndex = parentIndex*2+1;
         while (childIndex<length){
-            if(childIndex+1<length && array[childIndex]<array[childIndex+1]){
+            if(childIndex+1<length && array[childIndex]<array[childIndex+1]){// 找出左右孩子中较大的一个
                 childIndex++;
             }
             if(temp>array[childIndex]){
