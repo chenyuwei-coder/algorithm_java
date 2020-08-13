@@ -1,4 +1,4 @@
-package com.cyw.常规算法题.链表判环;
+package com.cyw.常规算法题.链表类;
 
 /**
  * @author chenyuwei

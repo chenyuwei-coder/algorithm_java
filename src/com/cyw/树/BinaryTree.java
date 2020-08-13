@@ -96,7 +96,7 @@ public class BinaryTree {
                 treeNode = treeNode.rightNode;
             }
         }
-
+        System.out.println();
     }
 
     /**
@@ -117,6 +117,7 @@ public class BinaryTree {
                 treeNode = treeNode.rightNode;
             }
         }
+        System.out.println();
     }
 
     /**
@@ -142,6 +143,28 @@ public class BinaryTree {
                 }
             }
         }
+        System.out.println();
+    }
+    public static void posOrderUnRecur(TreeNode head){
+        if (head!=null){
+            Stack<TreeNode> stack1 = new Stack<>();
+            Stack<TreeNode> stack2 = new Stack<>();
+            stack1.add(head);
+            while (!stack1.isEmpty()){
+                head = stack1.pop();
+                stack2.push(head);
+                if (head.leftNode!=null){
+                    stack1.push(head.leftNode);
+                }
+                if (head.rightNode!=null){
+                    stack1.push(head.rightNode);
+                }
+            }
+            while (!stack2.isEmpty()){
+                System.out.print(stack2.pop().data+" ");
+            }
+        }
+        System.out.println();
     }
 
     /**
@@ -173,7 +196,7 @@ public class BinaryTree {
         inOrderTraveral(node);
         System.out.println("后序遍历：");
 //        postOrderTraveral(node);
-        postOrderTravealWithStack(node);
+        posOrderUnRecur(node);
         System.out.println("层次遍历：");
         levelOrderTraveal(node);
     }
