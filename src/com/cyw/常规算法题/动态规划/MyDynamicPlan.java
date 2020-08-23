@@ -1,4 +1,4 @@
-package com.cyw.常规算法题.动态规划之挖金矿;
+package com.cyw.常规算法题.动态规划;
 
 /**
  * @author chenyuwei
