@@ -13,7 +13,7 @@ public class KMP {
      * @return 返回一个索引值
      */
     public static int getIndexOf(String string1, String string2) {
-        if (string1 == null || string1.length() == 0 || string2 == null || string2.length() == 0) {
+        if (string1 == null || string1.length() == 0 || string2 == null || string2.length() == 0||string1.length()<string2.length()) {
             return -1;
         }
         char[] str1 = string1.toCharArray();
